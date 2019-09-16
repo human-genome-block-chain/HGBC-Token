@@ -1,11 +1,11 @@
-pragma solidity ^0.4.20;
+pragma solidity ^0.4.25;
 
 import "./SafeMath.sol";
 import "./Ownable.sol";
 
 /**
  * @title HGBC ERC20 Token
- * @dev six_days qq:491685571
+ * six_days qq:491685571
  */
 
 /**
@@ -224,9 +224,9 @@ contract PausableToken is StandardToken, Pausable {
   }
 }
 
-contract HGBCToken is PausableToken {
-    string  public name = "HGBC";
-    string  public symbol = "HGBC";
+contract DNAToken is PausableToken {
+    string  public name = "DNA";
+    string  public symbol = "DNA";
     uint8   public decimals = 18;
     uint256    public totalSupply = 3000000000 * 10 ** uint256(decimals);
     event Burn(address indexed from, uint256 value);
